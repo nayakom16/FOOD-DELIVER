@@ -1,0 +1,37 @@
+.hero{
+    width: 100%;
+    height: 34vw;
+    position: relative;
+    background-image: url("header_img.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding:120px 100px ;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    gap: 25px;
+    margin: 30px 0;
+
+
+    & h1{
+        font-size: 45px;
+    }
+
+    & p{
+        width: 50%;
+        font-size: 15px;
+        font-weight: 200;
+        cursor: pointer;
+    }
+
+    
+}
+
+.hero-btn{
+    display: inline-block;
+    width: 15%;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+}

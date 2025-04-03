@@ -1,0 +1,33 @@
+.explore-menu-contain{
+    margin: 30px auto;
+    & h1{
+        font-size: 40px;
+        color: rgba(0, 0, 0, 0.714);
+        font-size: 500;
+        padding: 10px 0;
+    }
+
+    & p{
+        font-size: 13px;
+        color: rgba(0, 0, 0, 0.458);
+        padding-bottom: 40px;
+    }
+    
+}
+
+.menu-item-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-item-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    & img{
+        width: 80px;
+    }    
+}
