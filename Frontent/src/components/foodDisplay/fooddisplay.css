@@ -1,0 +1,13 @@
+.food-Display{
+ margin-bottom: 30px;
+}
+.food-Display h1{
+    color: rgba(0, 0, 0, 0.714);
+    margin: 30px 0;
+}
+
+.food-Display-Container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 35px;
+}
