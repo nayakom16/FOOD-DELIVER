@@ -1,5 +1,6 @@
 .explore-menu-contain{
     margin: 30px auto;
+    
     & h1{
         font-size: 40px;
         color: rgba(0, 0, 0, 0.714);
@@ -15,10 +16,17 @@
     
 }
 
+
 .menu-item-list{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 20px;
+    overflow-x: scroll;
+}
+
+.menu-item-list::-webkit-scrollbar{
+    display: none;
 }
 
 .menu-item-content {

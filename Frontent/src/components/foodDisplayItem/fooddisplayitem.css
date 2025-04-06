@@ -1,5 +1,5 @@
 .food-item{
-    min-width: 280px;
+    max-width: 250px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.136);
     border-radius: 20px;
     display: flex;
