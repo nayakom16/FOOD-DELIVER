@@ -60,3 +60,21 @@ hr{
     font-size: 10px;
     letter-spacing: 1px;
 }
+
+
+@media (max-width:420px) {
+    .footer-content{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .footer-content-left p{
+        font-size: 10px;
+        
+    
+    }
+
+    .footer-content-center h2,.footer-content-right h2{
+        font-size: 25px;
+    }
+}

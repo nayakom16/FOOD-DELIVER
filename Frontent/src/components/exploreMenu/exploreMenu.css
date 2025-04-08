@@ -55,3 +55,18 @@ hr{
     border: none;
     background:rgba(0, 0, 0, 0.21) ;
 }
+
+@media (max-width:420px) {
+    .explore-menu-contain{
+        margin: 20px auto;
+        
+        & h1{
+            font-size: 30px;
+        }
+    
+        & p{
+            font-size: 10px;
+        }
+        
+    }
+}
