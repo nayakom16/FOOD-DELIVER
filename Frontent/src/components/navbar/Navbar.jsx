@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { assets } from '../../assets/assets'
 import './Navbar.css'
 
-export default function Navbar(){
+export default function Navbar({setShowLogin}) {
     const [manu , setMenu] = useState("home")
     return(
         <div>
@@ -22,7 +22,7 @@ export default function Navbar(){
                         <img src={assets.bag_icon} alt="" />
                         <div className="navbar-cart-dot"></div>
                     </div>
-                    <button>Sign IN</button>
+                    <button onClick={()=>setShowLogin(true)}>Sign IN</button>
                 </div>
             </div>
         </div>

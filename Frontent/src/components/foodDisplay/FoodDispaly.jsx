@@ -6,7 +6,7 @@ import "./fooddisplay.css"
 
 const FoodDispaly = (category) => {
   const {food_list} = useContext(StoreContext)
-  console.log(food_list);
+  // console.log(food_list);
 
   
 
