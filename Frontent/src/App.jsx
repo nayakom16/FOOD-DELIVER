@@ -5,6 +5,7 @@ import Cart from "./pages/cart/Cart";
 import Footer from "./components/footer/Footer";
 import LoginPupup from "./components/login-signup/LoginPupup";
 import { useState } from "react";
+import PlaceOrder from "./pages/placeorder/PlaceOrder";
 
 function App() {
   const [showLogin, setShowLogin] = useState(false);
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/order" element={<PlaceOrder />} />
         </Routes>
       </div>
       <Footer />

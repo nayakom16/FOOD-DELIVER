@@ -5,9 +5,17 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Outfit", sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+a{
+    color: #49557e;
 }
 
 .app{
     width: 80%;
     margin: auto;
 }
+

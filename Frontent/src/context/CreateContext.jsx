@@ -6,6 +6,7 @@ export const StoreContext = createContext();
 export const StoreContextProvider = ({children}) => {
 
     const [cartItem , setCartItem] = useState({})
+    let [cartTotal , setCartTotal] = useState(0)
 
     function addToCart(itemID){
         if(!cartItem[itemID]){
@@ -19,17 +20,25 @@ export const StoreContextProvider = ({children}) => {
         setCartItem(prev=>({...prev,[itemID]:prev[itemID]-1}))
     }
 
-    useEffect(()=>{
-        console.log(cartItem);
-        
-    } , [cartItem])
+    useEffect(() => {
+        let total = 0;
+        food_list.forEach((item) => {
+          if (cartItem[item._id] ) {
+            total =total+ (item.price * cartItem[item._id]);
+          }
+        });
+        setCartTotal(total);
+    }, [cartItem])
+    
+    console.log(cartTotal)
 
     const contextVelue =  {
         food_list,
         cartItem,
         setCartItem,
         addToCart,
-        removeFromCart
+        removeFromCart,
+        cartTotal
     } 
     console.log(contextVelue);
     
