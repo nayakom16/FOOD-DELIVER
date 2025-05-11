@@ -57,12 +57,12 @@ const Cart = () => {
             <hr />
             <div className="cart-total-details">
               <p>Delivery Fee</p>
-              <p>Rs.{3}</p>
+              <p>Rs.{cartTotal === 0 ? "0" : "3"}</p>
             </div>
             <hr />
             <div className="cart-total-details">
               <b>Total</b>
-              <b>Rs.{cartTotal + 3}</b>
+              <b>Rs.{cartTotal +Number(cartTotal === 0 ? "0" : "3")}</b>
             </div>
             
           </div>
@@ -71,7 +71,7 @@ const Cart = () => {
 
         <div className="cart-promocode">
           <div>
-            <p>If you have the promo code,Enter it here</p>
+            <p>If you have any promo code, Enter it here</p>
             <div className="cart-promo-code-input">
               <input type="text" placeholder='Prome code'/>
               <button>Submit</button>

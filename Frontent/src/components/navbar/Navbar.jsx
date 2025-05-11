@@ -1,15 +1,18 @@
 
-import { useState } from 'react'
+import { useContext, useState } from 'react'
 import { assets } from '../../assets/assets'
 import './Navbar.css'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
+import { StoreContext } from '../../context/CreateContext'
 
 export default function Navbar({setShowLogin}) {
     const [manu , setMenu] = useState("home")
+    const { cartTotal } = useContext(StoreContext)
+    const nevigate = useNavigate()
     return(
         <div>
             <div className="navbar">
-                <img src={assets.logo} alt="" className="logo" />
+                <img src={assets.logo} alt="" className="logo" onClick={(()=>nevigate('/'))} />
                 <ul className="navbar-menu">
                     <Link to="/" onClick={()=>{setMenu("home")}} className={"home"==manu ?"active" :"" }>home</Link>
                     <a href='#explore-menu' onClick={()=>{setMenu("menu")}} className={"menu"==manu ?"active" :"" }>menu</a>
@@ -22,7 +25,7 @@ export default function Navbar({setShowLogin}) {
                     <div className="cart-icon">
                     <Link to='/cart'>
                         <img src={assets.bag_icon} alt="" />
-                        <div className="navbar-cart-dot"></div>
+                        <div className={cartTotal===0 ? "" : "navbar-cart-dot"}></div>
                     </Link>
                     </div>
                     <button onClick={()=>setShowLogin(true)}>Sign IN</button>
