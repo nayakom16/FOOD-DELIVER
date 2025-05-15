@@ -18,6 +18,14 @@ export default function Navbar({setShowLogin}) {
                     <a href='#explore-menu' onClick={()=>{setMenu("menu")}} className={"menu"==manu ?"active" :"" }>menu</a>
                     <a href="#mobile-app" onClick={()=>{setMenu("mobile-app")}} className={"mobile-app"==manu ?"active" :"" }>mobile-app</a>
                     <a href="#footer" onClick={()=>{setMenu("contact us")}} className={"contact us"==manu ?"active" :"" }>contact us</a>
+                    {/* <a href="#footer" onClick={()=>{setMenu("contact us")}} className={"contact us"==manu ?"active" :"" }>contact us</a> */}
+                    {/* <a href="#footer" onClick={()=>{setMenu("contact us")}} className={"contact us"==manu ?"active" :"" }>contact us</a> */}
+                    {/* <a href="#footer" onClick={()=>{setMenu("contact us")}} className={"contact us"==manu ?"active" :"" }>contact us</a> */}
+                    {/* <a href="#footer" onClick={()=>{setMenu("contact us")}} className={"contact us"==manu ?"active" :"" }>contact us</a> */}
+                    {/* <a href="#footer" onClick={()=>{setMenu("contact us")}} className={"contact us"==manu ?"active" :"" }>contact us</a> */}
+                    {/* <a href="#footer" onClick={()=>{setMenu("contact us")}} className={"contact us"==manu ?"active" :"" }>contact us</a> */}
+                    {/* <a href="#footer" onClick={()=>{setMenu("contact us")}} className={"contact us"==manu ?"active" :"" }>contact us</a> */}
+                    {/* <a href="#footer" onClick={()=>{setMenu("contact us")}} className={"contact us"==manu ?"active" :"" }>contact us</a> */}
                 </ul>
 
                 <div className="navbar-right">
