@@ -9,12 +9,6 @@ export default function Navbar({setShowLogin}) {
     const [manu , setMenu] = useState("home")
     const { cartTotal } = useContext(StoreContext)
     const nevigate = useNavigate()
-    // const nevigate = useNavigate()
-    // const nevigate = useNavigate()
-    // const nevigate = useNavigate()
-    // const nevigate = useNavigate()
-    // const nevigate = useNavigate()
-    // const nevigate = useNavigate()
     return(
         <div>
             <div className="navbar">
